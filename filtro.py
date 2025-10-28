@@ -1,17 +1,5 @@
 import random
 
-def filtrar_lista(lista, criterio):
-    """
-    Filtra una lista de elementos según un criterio dado.
-
-    Parámetros:
-    lista (list): La lista de elementos a filtrar.
-    criterio (function): Una función que toma un elemento y devuelve True si debe incluirse en la lista filtrada.
-
-    Retorna:
-    list: Una nueva lista con los elementos que cumplen el criterio.
-    """
-    return [elemento for elemento in lista if criterio(elemento)]
 
 def filtrar_palavras_5_letras(lista_palavras):
     """
