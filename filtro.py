@@ -1,6 +1,9 @@
 import random
 
 
+
+
+
 def filtrar_palavras_5_letras(lista_palavras):
     """
     Filtra uma lista de palavras e retorna apenas aquelas que têm exatamente 5 letras.
@@ -18,6 +21,7 @@ if __name__ == "__main__":
     try:
         with open('arquivo.txt', 'r', encoding='utf-8') as arquivo:
             palavras = arquivo.readlines()
+
         
         # Removendo espaços em branco e linhas vazias
         palavras = [palavra.strip() for palavra in palavras if palavra.strip()]
@@ -33,9 +37,7 @@ if __name__ == "__main__":
             for palavra in palavras_sem_duplicatas:
                 arquivo.write(palavra + '\n')
         
-        print(f"Total de palavras no arquivo: {len(palavras)}")
-        print(f"Total de palavras com 5 letras (com duplicatas): {len(palavras_filtradas)}")
-        print(f"Total de palavras com 5 letras (sem duplicatas): {len(palavras_sem_duplicatas)}")
+    
         print("\nAs palavras com 5 letras (sem duplicatas) foram salvas no arquivo 'palavras_5_letras.txt'")
         
         # Mostrando as primeiras 10 palavras encontradas como exemplo
